@@ -54,14 +54,14 @@ body {
   transition: all 0.3s;
 }
 
-.header_wrapper .header .contacts_align .contacts_wrapper .switcher-wrapper {
+.header_wrapper .header .contacts_align .contacts_wrapper .switcher_wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
   align-self: flex-end;
 }
 
-.header_wrapper .header .contacts_align .contacts_wrapper .switcher-wrapper .switcher {
+.header_wrapper .header .contacts_align .contacts_wrapper .switcher_wrapper .switcher {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -75,7 +75,7 @@ body {
   cursor: pointer;
 }
 
-.header_wrapper .header .contacts_align .contacts_wrapper .switcher-wrapper .switcher .tumbler-wrapper {
+.header_wrapper .header .contacts_align .contacts_wrapper .switcher_wrapper .switcher .tumbler_wrapper {
   display: flex;
   align-items: center;
   width: 34px;
@@ -83,7 +83,7 @@ body {
   border-radius: 50px;
 }
 
-.header_wrapper .header .contacts_align .contacts_wrapper .switcher-wrapper .switcher .tumbler-wrapper .tumbler {
+.header_wrapper .header .contacts_align .contacts_wrapper .switcher_wrapper .switcher .tumbler_wrapper .tumbler {
   width: 50%;
   height: 100%;
   border-radius: 50px;
@@ -91,7 +91,7 @@ body {
   transition: all 0.2s;
 }
 
-.header_wrapper .header .contacts_align .contacts_wrapper .switcher-wrapper .switcher .tumbler-wrapper .tumbler.activate {
+.header_wrapper .header .contacts_align .contacts_wrapper .switcher_wrapper .switcher .tumbler_wrapper .tumbler.activate {
   transform: translateX(100%);
 }
 
