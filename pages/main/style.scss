@@ -11,8 +11,161 @@ html {
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: #FFFFFF;
+    color: #000000;
+    height: 100%;
+}
+
+.align {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.header_wrapper {
+    height: 20%;
+    background-color: rgb(244, 250, 250);
+    .header {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .contacts_align {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: 100%;
+            width: 85%;
+            .contacts_wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: end;
+                height: 50%;
+                width: 50%;
+                .separator_wrapper {
+                    display: flex;
+                    align-items: center;
+                    height: 10%;
+                    width: 82%;
+                    .separator {
+                        width: 100%;
+                        border: 1px solid #003456;
+                        opacity: 0.5;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.main_wrapper {
+    height: 40%;
+    background-color: #003456;
+    .main {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .options_align {
+            height: 100%;
+            width: 85%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            .options_wrapper {
+                height: 50%;
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                .title {
+                    font-size: 4em;
+                    font-weight: 700;
+                    font-style: bold;
+                    color: rgb(244, 250, 250);
+                }
+                .separator_wrapper {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 10%;
+                    width: 21%;
+                    .separator {
+                        width: 100%;
+                        border: 1px solid rgb(244, 250, 250);
+                        opacity: 0.5;
+                    }
+                }
+                .options {
+                    font-size: 1.2em;
+                    color: rgb(244, 250, 250);
+                    list-style: none;
+                    padding-top: 2%;
+                }
+            }
+        }
+    }
+}
+
+.footer_wrapper {
+    height: 40%;
+    background-color: #003456;
+    .footer {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .prices_button_align {
+            height: 100%;
+            width: 85%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            .prices_button_wrapper {
+                height: 50%;
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                .prices_button {
+                    width: 207px;
+                    height: 52px;
+                    border: 2px solid rgb(244, 250, 250);
+                    background: rgb(244, 250, 250);
+                    border-radius: 100px;
+                    font-size: 1.1em;
+                    transition: 0.1s;
+                    &:hover {
+                        background: rgb(244, 250, 250);
+                        border: 2px solid rgb(244, 250, 250);
+                        cursor: pointer;
+                    }
+                    .prices_link {
+                        text-decoration: none;
+                        color: #000000;
+                    }
+                }
+            }
+            .separator_wrapper {
+                margin-bottom: 13%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 10%;
+                width: 21%;
+                .separator {
+                    width: 100%;
+                    border: 1px solid rgb(244, 250, 250);
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
 }
