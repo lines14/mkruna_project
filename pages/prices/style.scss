@@ -46,6 +46,42 @@ body {
                 height: 50%;
                 width: 47%;
                 transition: all 0.3s;
+                .switcher-wrapper {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    align-self: flex-end;
+                    .switcher {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 40px;
+                        height: 22px;
+                        border-radius: 50px;
+                        border: 2px solid #003456;
+                        opacity: 0.5;
+                        margin-left: 4px;
+                        margin-right: 4px;
+                        cursor: pointer;
+                        .tumbler-wrapper {
+                            display: flex;
+                            align-items: center;
+                            width: 34px;
+                            height: 16px;
+                            border-radius: 50px;
+                            .tumbler {
+                                width: 50%;
+                                height: 100%;
+                                border-radius: 50px;
+                                background-color: #003456;
+                                transition: all 0.2s;
+                                &.activate {
+                                    transform: translateX(100%);
+                                }
+                            }
+                        }
+                    }
+                }
                 .separator_wrapper {
                     display: flex;
                     align-items: center;
