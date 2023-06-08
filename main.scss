@@ -24,8 +24,14 @@ body {
 }
 
 .header_wrapper {
-    height: 20%;
+    height: 22%;
     background-color: rgb(244, 250, 250);
+    @media screen and (max-width: 600px) {
+        height: 28%;
+    }
+    @media screen and (max-width: 496px) {
+        height: 32%;
+    }
     .header {
         height: 100%;
         width: 100%;
@@ -44,13 +50,31 @@ body {
                 justify-content: space-between;
                 align-items: end;
                 height: 50%;
-                width: 47%;
+                width: 31.9em;
                 transition: all 0.3s;
+                .name {
+                    text-align: end;
+                }
+                @media screen and (max-width: 600px) {
+                    height: 52%;
+                }
+                @media screen and (max-width: 496px) {
+                    width: 20em;
+                    height: 60%;
+                }
                 .switcher_wrapper {
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
                     align-self: flex-end;
+                    .languages {
+                        height: 24px;
+                        width: 24px;
+                        @media screen and (max-width: 600px) {
+                            height: 30px;
+                            width: 30px;
+                        }
+                    }
                     .switcher {
                         display: flex;
                         align-items: center;
@@ -62,6 +86,10 @@ body {
                         opacity: 0.5;
                         margin-left: 4px;
                         margin-right: 4px;
+                        @media screen and (max-width: 600px) {
+                            width: 50px;
+                            height: 28px;
+                        }
                         cursor: pointer;
                         .tumbler_wrapper {
                             display: flex;
@@ -69,6 +97,10 @@ body {
                             width: 34px;
                             height: 16px;
                             border-radius: 50px;
+                            @media screen and (max-width: 600px) {
+                                width: 42.5px;
+                                height: 20px;
+                            }
                             .tumbler {
                                 width: 50%;
                                 height: 100%;
@@ -87,6 +119,12 @@ body {
                     align-items: center;
                     height: 10%;
                     width: 100%;
+                    @media screen and (max-width: 600px) {
+                        width: 21.2em;
+                    }
+                    @media screen and (max-width: 496px) {
+                        width: 16.4em;
+                    }
                     .separator {
                         width: 100%;
                         border: 1px solid #003456;
@@ -97,26 +135,35 @@ body {
                 .contacts {
                     width: 100%;
                     display: flex;
-                    justify-content: space-between;
+                    justify-content: flex-end;
                     align-items: center;
+                    @media screen and (max-width: 600px) {
+                        flex-wrap: wrap;
+                    }
+                    .contacts_item {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-left: 3.5%;
+                        @media screen and (max-width: 600px) {
+                            margin-top: 0.1em;
+                            margin-bottom: 0.1em;
+                            margin-left: 4.9em;
+                        }
+                        .icons {
+                            margin-left: -3%;
+                        }
+                        .contacts_link {
+                            text-decoration: none;
+                            color: #000000;
+                        }
+                    }
                 }
                 &:hover {
                     .separator_wrapper {
                         .separator {
                             border-color: rgb(177, 150, 0);
                         }
-                    }
-                }
-                .contacts_item {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    .icons {
-                        margin-left: -3%;
-                    }
-                    .contacts_link {
-                        text-decoration: none;
-                        color: #000000;
                     }
                 }
             }
@@ -141,16 +188,28 @@ body {
             align-items: center;
             .options_wrapper {
                 height: 50%;
-                width: 50%;
+                width: 31em;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
                 align-items: flex-start;
+                @media screen and (max-width: 600px) {
+                    width: 25em;
+                }
+                @media screen and (max-width: 436px) {
+                    height: 70%;
+                }
                 .title {
                     font-size: 4em;
                     font-weight: 700;
                     font-style: bold;
                     color: rgb(244, 250, 250);
+                    @media screen and (max-width: 600px) {
+                        font-size: 3em;
+                    }
+                    @media screen and (max-width: 436px) {
+                        width: 1em;
+                    }
                 }
                 .separator_wrapper {
                     display: flex;
@@ -176,8 +235,14 @@ body {
 }
 
 .footer_wrapper {
-    height: 40%;
+    height: 38%;
     background-color: #003456;
+    @media screen and (max-width: 600px) {
+        height: 32%;
+    }
+    @media screen and (max-width: 496px) {
+        height: 28%;
+    }
     .footer {
         height: 100%;
         width: 100%;
