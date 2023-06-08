@@ -17,10 +17,10 @@ if (languageSwitcher) {
    innerTextList.push(document.querySelector('.another_data'));
    innerTextList.push(document.querySelector('.another_auth'));
    innerTextList.push(document.querySelector('.tune'));
-   innerTextList.push(document.querySelector('.projects_link'));
 
    innerHTMLList.push(document.querySelector('.little_time'));
    innerHTMLList.push(document.querySelector('.more_time'));
+   innerHTMLList.push(document.querySelector('.projects_link'));
 
    ((e) => {
       innerTextList.forEach((element) => {
@@ -46,7 +46,7 @@ if (languageSwitcher) {
          another_data: 'Парсинг данных',
          another_auth: 'Включая сайты с авторизацией',
          tune: 'Настраиваемая периодичность',
-         projects_link: 'И другие проекты - подробности уточняйте!',
+         projects_link: 'И другие проекты,<br>подробности уточняйте!',
       }
 
       innerTextList.forEach((element) => {

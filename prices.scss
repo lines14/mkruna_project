@@ -24,8 +24,14 @@ body {
 }
 
 .header_wrapper {
-    height: 20%;
+    height: 22%;
     background-color: rgb(244, 250, 250);
+    @media screen and (max-width: 600px) {
+        height: 28%;
+    }
+    @media screen and (max-width: 496px) {
+        height: 32%;
+    }
     .header {
         height: 100%;
         width: 100%;
@@ -44,13 +50,31 @@ body {
                 justify-content: space-between;
                 align-items: end;
                 height: 50%;
-                width: 47%;
+                width: 31.9em;
                 transition: all 0.3s;
+                .name {
+                    text-align: end;
+                }
+                @media screen and (max-width: 600px) {
+                    height: 52%;
+                }
+                @media screen and (max-width: 496px) {
+                    width: 20em;
+                    height: 60%;
+                }
                 .switcher_wrapper {
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
                     align-self: flex-end;
+                    .languages {
+                        height: 24px;
+                        width: 24px;
+                        @media screen and (max-width: 600px) {
+                            height: 30px;
+                            width: 30px;
+                        }
+                    }
                     .switcher {
                         display: flex;
                         align-items: center;
@@ -62,6 +86,10 @@ body {
                         opacity: 0.5;
                         margin-left: 4px;
                         margin-right: 4px;
+                        @media screen and (max-width: 600px) {
+                            width: 50px;
+                            height: 28px;
+                        }
                         cursor: pointer;
                         .tumbler_wrapper {
                             display: flex;
@@ -69,6 +97,10 @@ body {
                             width: 34px;
                             height: 16px;
                             border-radius: 50px;
+                            @media screen and (max-width: 600px) {
+                                width: 42.5px;
+                                height: 20px;
+                            }
                             .tumbler {
                                 width: 50%;
                                 height: 100%;
@@ -87,6 +119,12 @@ body {
                     align-items: center;
                     height: 10%;
                     width: 100%;
+                    @media screen and (max-width: 600px) {
+                        width: 21.2em;
+                    }
+                    @media screen and (max-width: 496px) {
+                        width: 16.4em;
+                    }
                     .separator {
                         width: 100%;
                         border: 1px solid #003456;
@@ -97,26 +135,35 @@ body {
                 .contacts {
                     width: 100%;
                     display: flex;
-                    justify-content: space-between;
+                    justify-content: flex-end;
                     align-items: center;
+                    @media screen and (max-width: 600px) {
+                        flex-wrap: wrap;
+                    }
+                    .contacts_item {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-left: 3.5%;
+                        @media screen and (max-width: 600px) {
+                            margin-top: 0.1em;
+                            margin-bottom: 0.1em;
+                            margin-left: 4.9em;
+                        }
+                        .icons {
+                            margin-left: -3%;
+                        }
+                        .contacts_link {
+                            text-decoration: none;
+                            color: #000000;
+                        }
+                    }
                 }
                 &:hover {
                     .separator_wrapper {
                         .separator {
                             border-color: rgb(177, 150, 0);
                         }
-                    }
-                }
-                .contacts_item {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    .icons {
-                        margin-left: -3%;
-                    }
-                    .contacts_link {
-                        text-decoration: none;
-                        color: #000000;
                     }
                 }
             }
@@ -127,6 +174,9 @@ body {
 .main_wrapper {
     height: 60%;
     background-color: rgb(244, 250, 250);
+    @media screen and (max-width: 790px) {
+        height: 75em;
+    }
     .main {
         height: 100%;
         width: 100%;
@@ -139,9 +189,26 @@ body {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            @media screen and (max-width: 790px) {
+                flex-direction: column;
+                justify-content: space-evenly;
+            }
+            .first {
+                margin-right: 2em;
+                @media screen and (max-width: 790px) {
+                    margin-right: 0;
+                }
+            }
+            .second {
+                margin-left: 2em;
+                @media screen and (max-width: 790px) {
+                    margin-left: 0;
+                    margin-bottom: 2em;
+                }
+            }
             .prices_wrapper {
                 height: 80%;
-                width: 40%;
+                width: 28em;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
@@ -149,12 +216,18 @@ body {
                 border-radius: 2%;
                 border-top: 2px solid #00558d;
                 box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+                @media screen and (max-width: 790px) {
+                    height: 32em;
+                }
+                @media screen and (max-width: 595px) {
+                    width: 90%;
+                }
                 .separator_wrapper {
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     height: 10%;
-                    width: 50%;
+                    width: 14em;
                     .separator {
                         width: 100%;
                         border: 1px solid #003456;
@@ -174,6 +247,9 @@ body {
                 }
                 .title {
                     font-size: 1.5em;
+                    @media screen and (max-width: 1096px) {
+                        width: 73%
+                    }
                 }
                 .price {
                     font-size: 3em;
@@ -181,7 +257,7 @@ body {
                 }
                 .info {
                     .info_list {
-                        width: 61%;
+                        width: 16.6em;
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
@@ -192,7 +268,8 @@ body {
                             display: flex;
                             flex-direction: row;
                             justify-content: flex-start;
-                            align-items: center;
+                            align-items: flex-start;
+                            text-align: left;
                             .marker {
                                 margin-right: 1%;
                             }
@@ -205,8 +282,14 @@ body {
 }
 
 .footer_wrapper {
-    height: 20%;
+    height: 18%;
     background-color: #003456;
+    @media screen and (max-width: 600px) {
+        height: 16%;
+    }
+    @media screen and (max-width: 496px) {
+        height: 13%;
+    }
     .footer {
         height: 100%;
         width: 100%;
@@ -220,6 +303,9 @@ body {
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            @media screen and (max-width: 600px) {
+                height: 100%;
+            }
             .projects_button_wrapper {
                 height: 50%;
                 width: 100%;
@@ -231,7 +317,7 @@ body {
                     position: relative;
                     overflow: hidden;
                     z-index: 1;
-                    width: 407px;
+                    width: 307px;
                     height: 52px;
                     background: rgb(244, 250, 250);
                     border-radius: 10rem;

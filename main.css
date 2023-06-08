@@ -24,8 +24,20 @@ body {
 }
 
 .header_wrapper {
-  height: 20%;
+  height: 22%;
   background-color: #f4fafa;
+}
+
+@media screen and (max-width: 600px) {
+  .header_wrapper {
+    height: 28%;
+  }
+}
+
+@media screen and (max-width: 496px) {
+  .header_wrapper {
+    height: 32%;
+  }
 }
 
 .header_wrapper .header {
@@ -50,8 +62,25 @@ body {
   justify-content: space-between;
   align-items: end;
   height: 50%;
-  width: 47%;
+  width: 31.9em;
   transition: all 0.3s;
+}
+
+.header_wrapper .header .contacts_align .contacts_wrapper .name {
+  text-align: end;
+}
+
+@media screen and (max-width: 600px) {
+  .header_wrapper .header .contacts_align .contacts_wrapper {
+    height: 52%;
+  }
+}
+
+@media screen and (max-width: 496px) {
+  .header_wrapper .header .contacts_align .contacts_wrapper {
+    width: 20em;
+    height: 60%;
+  }
 }
 
 .header_wrapper .header .contacts_align .contacts_wrapper .switcher_wrapper {
@@ -59,6 +88,18 @@ body {
   align-items: center;
   justify-content: space-between;
   align-self: flex-end;
+}
+
+.header_wrapper .header .contacts_align .contacts_wrapper .switcher_wrapper .languages {
+  height: 24px;
+  width: 24px;
+}
+
+@media screen and (max-width: 600px) {
+  .header_wrapper .header .contacts_align .contacts_wrapper .switcher_wrapper .languages {
+    height: 30px;
+    width: 30px;
+  }
 }
 
 .header_wrapper .header .contacts_align .contacts_wrapper .switcher_wrapper .switcher {
@@ -75,12 +116,26 @@ body {
   cursor: pointer;
 }
 
+@media screen and (max-width: 600px) {
+  .header_wrapper .header .contacts_align .contacts_wrapper .switcher_wrapper .switcher {
+    width: 50px;
+    height: 28px;
+  }
+}
+
 .header_wrapper .header .contacts_align .contacts_wrapper .switcher_wrapper .switcher .tumbler_wrapper {
   display: flex;
   align-items: center;
   width: 34px;
   height: 16px;
   border-radius: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  .header_wrapper .header .contacts_align .contacts_wrapper .switcher_wrapper .switcher .tumbler_wrapper {
+    width: 42.5px;
+    height: 20px;
+  }
 }
 
 .header_wrapper .header .contacts_align .contacts_wrapper .switcher_wrapper .switcher .tumbler_wrapper .tumbler {
@@ -102,6 +157,18 @@ body {
   width: 100%;
 }
 
+@media screen and (max-width: 600px) {
+  .header_wrapper .header .contacts_align .contacts_wrapper .separator_wrapper {
+    width: 21.2em;
+  }
+}
+
+@media screen and (max-width: 496px) {
+  .header_wrapper .header .contacts_align .contacts_wrapper .separator_wrapper {
+    width: 16.4em;
+  }
+}
+
 .header_wrapper .header .contacts_align .contacts_wrapper .separator_wrapper .separator {
   width: 100%;
   border: 1px solid #003456;
@@ -112,27 +179,42 @@ body {
 .header_wrapper .header .contacts_align .contacts_wrapper .contacts {
   width: 100%;
   display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .header_wrapper .header .contacts_align .contacts_wrapper .contacts {
+    flex-wrap: wrap;
+  }
+}
+
+.header_wrapper .header .contacts_align .contacts_wrapper .contacts .contacts_item {
+  display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-left: 3.5%;
+}
+
+@media screen and (max-width: 600px) {
+  .header_wrapper .header .contacts_align .contacts_wrapper .contacts .contacts_item {
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+    margin-left: 4.9em;
+  }
+}
+
+.header_wrapper .header .contacts_align .contacts_wrapper .contacts .contacts_item .icons {
+  margin-left: -3%;
+}
+
+.header_wrapper .header .contacts_align .contacts_wrapper .contacts .contacts_item .contacts_link {
+  text-decoration: none;
+  color: #000000;
 }
 
 .header_wrapper .header .contacts_align .contacts_wrapper:hover .separator_wrapper .separator {
   border-color: #b19600;
-}
-
-.header_wrapper .header .contacts_align .contacts_wrapper .contacts_item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header_wrapper .header .contacts_align .contacts_wrapper .contacts_item .icons {
-  margin-left: -3%;
-}
-
-.header_wrapper .header .contacts_align .contacts_wrapper .contacts_item .contacts_link {
-  text-decoration: none;
-  color: #000000;
 }
 
 .main_wrapper {
@@ -158,11 +240,23 @@ body {
 
 .main_wrapper .main .options_align .options_wrapper {
   height: 50%;
-  width: 50%;
+  width: 31em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+@media screen and (max-width: 600px) {
+  .main_wrapper .main .options_align .options_wrapper {
+    width: 25em;
+  }
+}
+
+@media screen and (max-width: 436px) {
+  .main_wrapper .main .options_align .options_wrapper {
+    height: 70%;
+  }
 }
 
 .main_wrapper .main .options_align .options_wrapper .title {
@@ -170,6 +264,18 @@ body {
   font-weight: 700;
   font-style: bold;
   color: #f4fafa;
+}
+
+@media screen and (max-width: 600px) {
+  .main_wrapper .main .options_align .options_wrapper .title {
+    font-size: 3em;
+  }
+}
+
+@media screen and (max-width: 436px) {
+  .main_wrapper .main .options_align .options_wrapper .title {
+    width: 1em;
+  }
 }
 
 .main_wrapper .main .options_align .options_wrapper .separator_wrapper {
@@ -194,8 +300,20 @@ body {
 }
 
 .footer_wrapper {
-  height: 40%;
+  height: 38%;
   background-color: #003456;
+}
+
+@media screen and (max-width: 600px) {
+  .footer_wrapper {
+    height: 32%;
+  }
+}
+
+@media screen and (max-width: 496px) {
+  .footer_wrapper {
+    height: 28%;
+  }
 }
 
 .footer_wrapper .footer {
