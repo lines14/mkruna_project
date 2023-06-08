@@ -26,7 +26,7 @@ if (languageSwitcher) {
 
    const translateRussian = (e) => {
       const russianProperty = {
-         name: '«Малая Корона» DOO, Подгорица, Черногория',
+         name: '«Малая Корона» ООО, Подгорица, Черногория',
          title: 'Мониторинг цен',
          parse: 'Парсинг сайтов',
          analize: 'Анализ цен и наличия конкурентов',
