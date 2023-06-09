@@ -1,1 +1,1 @@
-# kruna_pet_project
+# mkruna_project
