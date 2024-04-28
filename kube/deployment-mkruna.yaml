@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mkruna
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mkruna
+  template:
+    metadata:
+      labels:
+        app: mkruna
+    spec:
+      containers:
+      - name: mkruna
+        image: lines14/mkruna:latest
+        ports:
+        - name: mkruna-port
+          containerPort: 3000
+      imagePullSecrets:
+      - name: docker-credentials
