@@ -1,10 +1,8 @@
 FROM node:alpine
 
-WORKDIR /app
+WORKDIR /
 
 RUN npm install -g serve
-
-COPY package*.json ./
 
 COPY . .
 
