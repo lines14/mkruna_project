@@ -22,4 +22,4 @@ spec:
           service:
             name: mkruna
             port:
-              number: 81
+              number: 82

@@ -6,7 +6,7 @@ spec:
   type: ClusterIP
   ports:
   - name: mkruna-svc-port
-    port: 81
+    port: 82
     targetPort: mkruna-port
     protocol: TCP
   selector:

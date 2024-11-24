@@ -17,6 +17,6 @@ spec:
         image: lines14/mkruna:latest
         ports:
         - name: mkruna-port
-          containerPort: 3000
+          containerPort: 3001
       imagePullSecrets:
       - name: docker-credentials
