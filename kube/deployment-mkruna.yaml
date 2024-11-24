@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: mkruna
-        image: lines14/mkruna:latest
+        image: lines14/mkruna_project:latest
         ports:
         - name: mkruna-port
           containerPort: 3001
